@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { TableRowProps } from "./Table_Row.types";
+import type { TableRowProps } from "./Table_Row.types";
 
 const StyledTableRow = styled.tr<{
     $disabled?: boolean;

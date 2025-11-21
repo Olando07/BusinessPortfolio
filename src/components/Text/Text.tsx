@@ -1,6 +1,6 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import { TextProps } from "./Text.types";
+import type { TextProps } from "./Text.types";
 
 const StyledText = styled.p<{
     color?: string;

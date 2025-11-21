@@ -1,6 +1,6 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import { RadioButtonProps } from "./RadioButton.types";
+import type { RadioButtonProps } from "./RadioButton.types";
 
 const RadioContainer = styled.label<{ disabled?: boolean }>`
     display: inline-flex;

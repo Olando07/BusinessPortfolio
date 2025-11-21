@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { HeroImageProps } from "./HeroImg.types";
+import type { HeroImageProps } from "./HeroImg.types";
 
 const HeroContainer = styled.div<{
     disabled?: boolean;

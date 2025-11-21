@@ -1,6 +1,6 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import { ButtonProps } from "./Button.types";
+import type { ButtonProps } from "./Button.types";
 
 const StyledButton = styled.button<{
     $disabled?: boolean;
@@ -43,15 +43,16 @@ const StyledButton = styled.button<{
 const Button: React.FC<ButtonProps> = ({
     label,
     disabled = false,
-    background,
+    background, children, ...props
 }) => {
     return (
         <StyledButton
             $disabled={disabled}
             $background={background}
             aria-disabled={disabled}
+            {...props}
         >
-            {label}
+            {label}{children}
         </StyledButton>
     );
 };

@@ -7,35 +7,72 @@ function App() {
         <div className="App">
             <nav>
                 <ul>
-                    <li> 
-                        <Button label="visible">
-                        <a href="#basicInfo">Basic Info</a>
-                        </Button>
+                    <li>
+                        <Button
+                            label="Basic Info"
+                            onClick={() =>
+                                document
+                                    .getElementById("basicInfo")
+                                    ?.scrollIntoView({ behavior: "smooth" })
+                            }
+                        ></Button>
                     </li>
                     <li>
-                        <Button label="visible">
-                        <a href="#work">Work</a>
-                        </Button>
+                        <Button
+                            label="Work"
+                            onClick={() =>
+                                document
+                                    .getElementById("work")
+                                    ?.scrollIntoView({ behavior: "smooth" })
+                            }
+                        ></Button>
                     </li>
                     <li>
-                        <Button label="visible">
-                        <a href="#skills">Skills</a>
-                        </Button>
+                        <Button
+                            label="Skills"
+                            onClick={() =>
+                                document
+                                    .getElementById("skills")
+                                    ?.scrollIntoView({ behavior: "smooth" })
+                            }
+                        ></Button>
                     </li>
                     <li>
-                        <Button label="visible">
-                        <a href="#resources">Resources</a>
-                        </Button>
+                        <Button
+                            label="Resources"
+                            onClick={() =>
+                                document
+                                    .getElementById("resources")
+                                    ?.scrollIntoView({ behavior: "smooth" })
+                            }
+                        ></Button>
                     </li>
                     <li>
-                        <Button label="visible">
-                        <a href="#developerSetup">Developer Setup</a>
-                        </Button>
+                        <Button
+                            label="Developer Setup"
+                            onClick={() =>
+                                document
+                                    .getElementById("developerSetup")
+                                    ?.scrollIntoView({ behavior: "smooth" })
+                            }
+                        ></Button>
                     </li>
                 </ul>
             </nav>
-            <section>
-
+            <section id="basicInfo" className="">
+                Basic Info
+            </section>
+            <section id="work" className="">
+                Work
+            </section>
+            <section id="skills" className="">
+                Skills
+            </section>
+            <section id="resources" className="">
+                Resources
+            </section>
+            <section id="developerSetup" className="">
+                Developer SetUp
             </section>
         </div>
     );

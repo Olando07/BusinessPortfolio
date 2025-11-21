@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { TableCellProps } from "./Table_Cell.types";
+import type { TableCellProps } from "./Table_Cell.types";
 
 const StyledTableCell = styled.td<{ disabled?: boolean; textColor?: string }>`
 	padding: 12px 16px;

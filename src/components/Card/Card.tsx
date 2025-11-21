@@ -1,6 +1,6 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import { CardProps } from "./Card.types";
+import type { CardProps } from "./Card.types";
 
 const StyledCard = styled.div<{
     background?: string;

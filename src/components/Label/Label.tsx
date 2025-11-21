@@ -1,6 +1,6 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import { LabelProps } from "./Label.types";
+import type { LabelProps } from "./Label.types";
 
 const StyledLabel = styled.label<{
     color?: string;

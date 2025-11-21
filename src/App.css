@@ -9,7 +9,6 @@
 .App nav ul {
     display: flex;
     font-size: 18px;
-    gap: 25px;
     list-style: none;
     height: 100%;
 }
@@ -23,18 +22,20 @@
 }
 
 .App nav ul li:hover {
-    background-color: #ffffff;
+
 }
 
-.App nav ul li a {
+.App nav ul li button {
     margin: 10px 12px;
     text-decoration: none;
     font-size: 20px;
     color: #48cee0;
+    background: transparent;
 }
 
-.App nav ul li a:hover {
+.App nav ul li button:hover {
     color: #3694a0;
+    background-color: #ffffff;
 }
 
 body {

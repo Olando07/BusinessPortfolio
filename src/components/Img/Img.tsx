@@ -1,6 +1,6 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import { ImgProps } from "./Img.types";
+import type { ImgProps } from "./Img.types";
 
 const StyledImg = styled.img<{
     width?: string;
