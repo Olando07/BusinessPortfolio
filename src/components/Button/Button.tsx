@@ -50,7 +50,6 @@ const Button: React.FC<ButtonProps> = ({
             $disabled={disabled}
             $background={background}
             aria-disabled={disabled}
-            disabled={disabled}
         >
             {label}
         </StyledButton>
