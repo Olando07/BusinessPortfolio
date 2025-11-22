@@ -10,7 +10,7 @@ const StyledButton = styled.button<{
     align-items: center;
     justify-content: center;
     gap: 8px;
-    border-radius: 8px;
+    border-radius: 5px;
     transition:
         background 180ms ease,
         opacity 180ms ease;
@@ -19,7 +19,7 @@ const StyledButton = styled.button<{
     background: var(--color-primary, #007bff);
     color: white;
     border: none;
-    padding: 8px 14px;
+    padding: 2px 10px;
     font-size: 1rem;
     ${({ $background }) =>
         $background &&
@@ -28,7 +28,7 @@ const StyledButton = styled.button<{
         `}
 
     @media (min-width: 768px) {
-        border-radius: 10px;
+        border-radius: 5px;
     }
 
     ${({ $disabled }) =>
@@ -43,7 +43,9 @@ const StyledButton = styled.button<{
 const Button: React.FC<ButtonProps> = ({
     label,
     disabled = false,
-    background, children, ...props
+    background,
+    children,
+    ...props
 }) => {
     return (
         <StyledButton
@@ -52,7 +54,8 @@ const Button: React.FC<ButtonProps> = ({
             aria-disabled={disabled}
             {...props}
         >
-            {label}{children}
+            {label}
+            {children}
         </StyledButton>
     );
 };

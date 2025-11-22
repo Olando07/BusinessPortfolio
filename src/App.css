@@ -1,9 +1,12 @@
+@import "tailwindcss";
+
+/* Nav styles */
 .App nav {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    margin: 10px 0;
+    margin: 40px 0;
 }
 
 .App nav ul {
@@ -21,12 +24,8 @@
     height: 35px;
 }
 
-.App nav ul li:hover {
-
-}
-
 .App nav ul li button {
-    margin: 10px 12px;
+    margin: 0 5px;
     text-decoration: none;
     font-size: 20px;
     color: #48cee0;
@@ -38,7 +37,36 @@
     background-color: #ffffff;
 }
 
+/* Body styles */
 body {
     background-color: #181818;
     min-height: 100%vh;
+}
+
+/* Section Headings */
+.section-headings {
+    color: transparent;
+    background: linear-gradient(
+        to right,
+        #42e9cd,
+        #0066cc,
+        rgb(76, 157, 233),
+        #34dcc3
+    );
+    background-clip: text;
+    background-size: 200%;
+    animation: gradient 3s linear infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 200% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#basicInfo {
+    /* background-color: #373737; */
 }

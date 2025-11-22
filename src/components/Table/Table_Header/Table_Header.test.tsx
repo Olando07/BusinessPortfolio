@@ -31,6 +31,5 @@ describe("TableHeader Component", () => {
                 </TableHeader>
             </Table>,
         );
-        const headerElement = screen.getByText(/Test Header/i).closest("thead");
     });
 });

@@ -28,6 +28,7 @@ const Text: React.FC<TextProps> = ({
     fontSize,
     fontWeight,
     disabled,
+    className,
 }) => {
     if (!content) throw new Error("Text cannot be empty");
     return (
@@ -36,6 +37,7 @@ const Text: React.FC<TextProps> = ({
             fontSize={fontSize}
             fontWeight={fontWeight}
             disabled={disabled}
+            className={className}
         >
             {content}
         </StyledText>

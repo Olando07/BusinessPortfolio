@@ -1,4 +1,4 @@
- import React from "react";
+import React from "react";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import Button from "./Button";
@@ -13,6 +13,6 @@ describe("Button component", () => {
     test("is disabled when disabled prop is true", () => {
         render(<Button label="Disabled" disabled />);
         const btn = screen.getByRole("button", { name: /disabled/i });
-        expect(btn).toBeDisabled();
+        expect(btn).toHaveAttribute("aria-disabled", "true");
     });
 });

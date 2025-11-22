@@ -4,4 +4,5 @@ export interface TextProps {
     fontSize?: string;
     fontWeight?: string;
     disabled?: boolean;
+    className?: string;
 }

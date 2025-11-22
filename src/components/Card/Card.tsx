@@ -15,7 +15,9 @@ const StyledCard = styled.div<{
     cursor: pointer;
     background-color: ${({ background }) => background || "#fff"};
     box-shadow: opx 2px 6px rgba(0, 0, 0, 0.1);
-    width: 280px;
+    min-width: 280px;
+    max-width: 300px;
+    height: 350px;
 
     @media (min-width: 768px) {
         border-radius: 10px;
@@ -49,6 +51,7 @@ const Card: React.FC<CardProps> = ({
     content = "Card description is shown here",
     disabled = false,
     background,
+    className,
 }) => {
     if (!title) throw new Error("Title cannot be empty");
     return (
@@ -56,6 +59,7 @@ const Card: React.FC<CardProps> = ({
             disabled={disabled}
             background={background}
             aria-disabled={disabled}
+            className={className}
         >
             <CardTitle>{title}</CardTitle>
             <CardContent>{content}</CardContent>

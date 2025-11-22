@@ -1,5 +1,5 @@
 import React from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import type { DropdownProps } from "./Dropdown.types";
 
 const StyledSelect = styled.select<{

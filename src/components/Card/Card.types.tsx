@@ -3,4 +3,5 @@ export interface CardProps {
     content: string;
     background?: string;
     disabled?: boolean;
+    className?: string;
 }
