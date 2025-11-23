@@ -63,24 +63,41 @@ function App() {
             </nav>
             <section
                 id="basicInfo"
-                className="mt-10 px-15 py-10 flex flex-col text-white bg-gray-800"
+                className="mt-10 px-15 py-20 flex flex-col text-white bg-gray-800"
             >
-                <h1 className="text-3xl section-headings mb-3">👤Basic Info</h1>
-                <div>
-                    <Text content="Hello I'm Olando, a software developer, full stack web developer, Web Designer, Web Application Business Analyst and Web Application Support Specialist. I have almost completed the Full Stack Web Development course ar Red River College and gain 1 year of experience in the software and web developemnt field, through coursework and personal projects. From building to working with APIs, working with Databases, pentesting systems, creating or modifying backend logic or frontend logic for UI/UX, I am ready to join your team and work in a collaborative environment tp deliver work of the highest quality."></Text>
-                </div>
-            </section>
-            <section id="work" className="px-15 py-10 flex flex-col bg-black">
-                <h1 className="text-3xl section-headings mb-3">💼Work</h1>
+                <h1 className="text-3xl section-headings mb-6">👤Basic Info</h1>
                 <div>
                     <Text
-                        color="white"
-                        content="Here, you can view and use some of the work i have"
-                        className="block mb-5"
+                        fontSize="18px"
+                        content="Hello I'm Olando, a software developer, full stack web developer, Web Designer, Web Application Business Analyst and Web Application Support Specialist. I have almost completed the Full Stack Web Development course ar Red River College and gain 1 year of experience in the software and web developemnt field, through coursework and personal projects. From building to working with APIs, working with Databases, pentesting systems, creating or modifying backend logic or frontend logic for UI/UX, I am ready to join your team and work in a collaborative environment tp deliver work of the highest quality."
                     ></Text>
+                </div>
+            </section>
+            <section
+                id="work"
+                className="px-15 py-20 flex flex-col bg-black text-right"
+            >
+                <h1 className="text-3xl section-headings mb-6">💼Work</h1>
+                <Text
+                    color="white"
+                    content="Here, you can view and use some of the work i have"
+                    className="block mb-15"
+                ></Text>
+                <div className="flex">
                     <Card
-                        title="My real Portfolio"
-                        content="page => https://olando07.github.io/Lando/"
+                        title="My Original Portfolio site"
+                        content="Here is my portfolio that I have created and been working on occasionly for 7 months."
+                        image="../public/portfolio.png"
+                        techStack={["React.js", "Tailwindcss", "CSS", "Git"]}
+                        isLive={true}
+                        liveDemo="https://olando07.github.io/Lando/"
+                        className="mx-20"
+                    ></Card>
+                    <Card
+                        title="My guessing game site"
+                        image="../public/pokemon_info.png"
+                        techStack={["Ruby on Rails", "Bulma CSS", "Git"]}
+                        isLive={false}
                     ></Card>
                 </div>
             </section>
