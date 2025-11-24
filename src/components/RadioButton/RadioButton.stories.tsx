@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import RadioButton from "./RadioButton";
-import { RadioButtonProps } from "./RadioButton.types";
+import type { RadioButtonProps } from "./RadioButton.types";
 
 const meta: Meta<typeof RadioButton> = {
     title: "Components/RadioButton",

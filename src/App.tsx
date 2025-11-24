@@ -86,7 +86,7 @@ function App() {
                         background="#d1d5dc"
                         title="My Original Portfolio"
                         content="Here is my portfolio that I have created and been working on occasionly for 7 months. It is a SPA that uses reacts key utilities, clever styling and creativity."
-                        image="../public/portfolio.png"
+                        image="/portfolio.png"
                         techStack={["React.js", "Tailwindcss", "CSS", "Git"]}
                         isLive={true}
                         liveDemo="https://olando07.github.io/Lando/"
@@ -95,7 +95,7 @@ function App() {
                     <Card
                         background="#d1d5dc"
                         title="Pokemon Information"
-                        image="../public/pokemon_info.png"
+                        image="/pokemon_info.png"
                         techStack={["Ruby on Rails", "Bulma CSS", "Git"]}
                         isLive={true}
                         className="card-hover"
@@ -104,7 +104,7 @@ function App() {
                         background="#d1d5dc"
                         title="RRC Student Guide"
                         content="This site was created for a communications assignment in my first college term. It was created to summarize and keep all the necessary information that new students need."
-                        image="../public/student_guide.png"
+                        image="/student_guide.png"
                         techStack={["React.js", "CSS", "Git"]}
                         isLive={true}
                         liveDemo="https://olando07.github.io/Olando_McDonald_P4/"
@@ -113,7 +113,7 @@ function App() {
                     <Card
                         background="#d1d5dc"
                         title="My term 1 final project"
-                        image="../public/term1_proj.png"
+                        image="/term1_proj.png"
                         techStack={["HTML", "CSS", "JavaScript"]}
                         isLive={true}
                         liveDemo="https://olando07.github.io/New-Student-Guide/"
@@ -136,7 +136,7 @@ function App() {
                         title="HTML"
                         isLive={false}
                         width="260px"
-                        image="../public/icons8-html-48.png"
+                        image="/icons8-html-48.png"
                         className="skill-card card-hover"
                         content="HTML is the foundation of every website and web application. It structures content and allows me to create semantic, accessible interfaces."
                     ></Card>
@@ -146,7 +146,7 @@ function App() {
                         title="CSS"
                         isLive={false}
                         width="260px"
-                        image="../public/icons8-css-48.png"
+                        image="/icons8-css-48.png"
                         className="skill-card card-hover"
                         content="CSS brings designs to life and creates visually appealing user experiences. I use it to style responsive layouts and implement modern design patterns."
                     ></Card>
@@ -156,7 +156,7 @@ function App() {
                         title="JavaScript"
                         isLive={false}
                         width="260px"
-                        image="../public/icons8-js-48.png"
+                        image="/icons8-js-48.png"
                         className="skill-card card-hover"
                         content="JavaScript adds interactivity and dynamic functionality to web applications. It's essential for creating engaging user experiences and handling complex logic on the client side."
                     ></Card>
@@ -166,7 +166,7 @@ function App() {
                         title="React.js"
                         isLive={false}
                         width="260px"
-                        image="../public/icons8-react-48.png"
+                        image="/icons8-react-48.png"
                         className="skill-card card-hover"
                         content="React is my go-to framework for building modern, component-based applications. It allows me to create reusable UI components and manage application state efficiently."
                     ></Card>
@@ -176,7 +176,7 @@ function App() {
                         title="Python"
                         isLive={false}
                         width="260px"
-                        image="../public/icons8-python-48.png"
+                        image="/icons8-python-48.png"
                         className="skill-card card-hover"
                         content="Python is a versatile language I use for backend development and scripting. Its simplicity and extensive libraries make it perfect for rapid development and problem-solving."
                     ></Card>
@@ -186,7 +186,7 @@ function App() {
                         title="Java"
                         isLive={false}
                         width="260px"
-                        image="../public/icons8-java-48.png"
+                        image="/icons8-java-48.png"
                         className="skill-card card-hover"
                         content="Java is a powerful object-oriented language used in enterprise applications. I leverage it for building robust, scalable backend systems."
                     ></Card>
@@ -196,7 +196,7 @@ function App() {
                         title="Ruby on Rails"
                         isLive={false}
                         width="260px"
-                        image="../public/icons8-ruby-on-rails-48.png"
+                        image="/icons8-ruby-on-rails-48.png"
                         className="skill-card card-hover"
                         content="Rails is a full-stack framework that speeds up web application development. I use it to quickly build database-backed applications with clean, maintainable code."
                     ></Card>
@@ -206,7 +206,7 @@ function App() {
                         title="PHP"
                         isLive={false}
                         width="260px"
-                        image="../public/icons8-php-48.png"
+                        image="/icons8-php-48.png"
                         className="skill-card card-hover"
                         content="PHP powers many web applications and content management systems. I use it for server-side scripting and building dynamic web solutions."
                     ></Card>
@@ -216,7 +216,7 @@ function App() {
                         title="Node.js"
                         isLive={false}
                         width="260px"
-                        image="../public/icons8-nodejs-48.png"
+                        image="/icons8-nodejs-48.png"
                         className="skill-card card-hover"
                         content="Node.js allows me to use JavaScript on the backend for full-stack development. It's perfect for building fast, scalable server applications and APIs."
                     ></Card>
@@ -226,7 +226,7 @@ function App() {
                         title="Git"
                         isLive={false}
                         width="260px"
-                        image="../public/icons8-git-48.png"
+                        image="/icons8-git-48.png"
                         className="skill-card card-hover"
                         content="Git is essential for version control and collaborative development. I use it daily to track changes, manage code and work effectively in team environments."
                     ></Card>
