@@ -63,7 +63,7 @@ function App() {
             </nav>
             <section
                 id="basicInfo"
-                className="mt-10 px-15 py-20 flex flex-col text-white bg-gray-900"
+                className="mt-10 px-35 py-20 flex flex-col text-white"
             >
                 <h1 className="text-3xl section-headings mb-6">👤Basic Info</h1>
                 <div>
@@ -73,10 +73,7 @@ function App() {
                     ></Text>
                 </div>
             </section>
-            <section
-                id="work"
-                className="px-15 py-20 flex flex-col bg-slate-700"
-            >
+            <section id="work" className="px-15 py-20 flex flex-col ">
                 <h1 className="text-3xl section-headings mb-6 ml-157">
                     💼Work
                 </h1>
@@ -100,7 +97,7 @@ function App() {
                         title="Pokemon Information"
                         image="../public/pokemon_info.png"
                         techStack={["Ruby on Rails", "Bulma CSS", "Git"]}
-                        isLive={false}
+                        isLive={true}
                         className="card-hover"
                     ></Card>
                     <Card
@@ -126,7 +123,7 @@ function App() {
             </section>
             <section
                 id="skills"
-                className="px-15 py-20 flex justify-start flex-col bg-gray-800"
+                className="px-35 py-20 flex justify-start flex-col"
             >
                 <h1 className="text-3xl section-headings mb-6">⭐Skills</h1>
                 <Text
@@ -241,73 +238,81 @@ function App() {
             </section>
             <section
                 id="resources"
-                className="px-15 py-20 flex justify-end flex-col bg-slate-800"
+                className="px-35 py-20 flex justify-center flex-col "
             >
-                <h1 className="text-3xl section-headings">📌Resources</h1>
+                <h1 className="text-3xl section-headings ml-120">
+                    📌Resources
+                </h1>
                 <Text
-                    className="mb-10 mt-5  text-white"
+                    className="mb-10 mt-5 ml-122 text-white"
                     content="As a developer, I rely on these resources to solve problems, learn new technologies and stay updated with best practices."
                 ></Text>
-                <div className="grid grid-cols-3 gap-5 justify-center">
+                <div className="grid grid-cols-3 gap-10 justify-center">
                     <Card
                         title="Stack Overflow"
                         isLive={true}
                         liveDemo="https://stackoverflow.com"
+                        image="https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon.png"
                         width="260px"
                         background="#d1d5dc"
                         content="My go-to platform for finding solutions to coding problems. The community-driven Q&A format helps me troubleshoot issues quickly."
-                        className="card-hover"
+                        className="card-hover resource-card"
                     ></Card>
                     <Card
                         title="MDN Web Docs"
                         isLive={true}
                         liveDemo="https://developer.mozilla.org"
+                        image="https://developer.mozilla.org/favicon-48x48.png"
                         width="260px"
                         background="#d1d5dc"
                         content="Comprehensive documentation for web technologies. I use it as a reference for HTML, CSS and JavaScript best practices."
-                        className="card-hover"
+                        className="card-hover resource-card"
                     ></Card>
                     <Card
                         title="GitHub"
                         isLive={true}
                         liveDemo="https://github.com"
+                        image="https://github.githubassets.com/favicons/favicon.png"
                         width="260px"
                         background="#d1d5dc"
                         content="Essential for version control and exploring open-source projects. I use it to collaborate, share code and learn from other developers."
-                        className="card-hover"
+                        className="card-hover resource-card"
                     ></Card>
                     <Card
                         title="React Docs"
                         isLive={true}
                         liveDemo="https://react.dev"
+                        image="https://react.dev/favicon-32x32.png"
                         width="260px"
                         background="#d1d5dc"
                         content="The official React documentation is my reference for hooks, components and best practices. It keeps me updated on the latest React patterns and features."
-                        className="card-hover"
+                        className="card-hover resource-card"
                     ></Card>
                     <Card
                         title="W3Schools"
                         isLive={true}
                         liveDemo="https://www.w3schools.com"
+                        image="https://www.w3schools.com/favicon.ico"
                         width="260px"
                         background="#d1d5dc"
                         content="A quick reference site for syntax and examples across multiple languages. I use it for fast lookups when I need to refresh my memory on specific methods or properties."
-                        className="card-hover"
+                        className="card-hover resource-card"
                     ></Card>
                     <Card
                         title="Dev.to"
                         isLive={true}
                         liveDemo="https://dev.to"
+                        image="https://dev.to/favicon.ico"
                         width="260px"
                         background="#d1d5dc"
                         content="A community platform where developers share tutorials and insights. I read articles here to learn new techniques and stay current with industry trends."
-                        className="card-hover"
+                        className="card-hover resource-card"
                     ></Card>
                 </div>
             </section>
             <section
                 id="developerSetup"
-                className="px-15 py-20 flex justify-center flex-col bg-gray-700"
+                className="px-35 py-20 flex justify-center flex-col "
             >
                 <h1 className="text-3xl section-headings mb-6">
                     ⚡Developer Setup
