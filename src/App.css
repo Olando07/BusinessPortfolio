@@ -28,23 +28,18 @@
     margin: 0 5px;
     text-decoration: none;
     font-size: 20px;
-    color: #48cee0;
     background: transparent;
-}
-
-.App nav ul li button:hover {
-    color: #3694a0;
-    background-color: #ffffff;
 }
 
 /* Body styles */
 body {
-    background-color: #181818;
+    /* background-color: #181818; */
     min-height: 100%vh;
 }
 
 /* Section Headings */
-.section-headings {
+.section-headings,
+.App nav ul li button {
     color: transparent;
     background: linear-gradient(
         to right,
@@ -67,6 +62,27 @@ body {
     }
 }
 
-#basicInfo {
-    /* background-color: #373737; */
+/* Skill card specific styles */
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-card img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+}
+
+.card-hover {
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }

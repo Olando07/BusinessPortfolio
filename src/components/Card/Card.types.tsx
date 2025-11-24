@@ -8,4 +8,6 @@ export interface CardProps {
     techStack?: string[];
     liveDemo?: string;
     isLive?: boolean;
+    width?: string;
+    height?: string;
 }

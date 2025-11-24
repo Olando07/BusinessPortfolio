@@ -5,20 +5,21 @@ import type { CardProps } from "./Card.types";
 const StyledCard = styled.div<{
     background?: string;
     disabled?: boolean;
+    width?: string;
+    height?: string;
 }>`
     display: flex;
     align-items: center;
     flex-direction: column;
     padding: 10px;
     border-radius: 12px;
+    border: 1px solid;
     transition: 0.3s ease;
     cursor: pointer;
     background-color: ${({ background }) => background || "#fff"};
     box-shadow: opx 2px 6px rgba(0, 0, 0, 0.1);
-    width: 480px;
-    max-width: 600px;
-
-    @media (min-width: 768px) {
+    width: ${({ width }) => width || "470px"};
+    height: ${({ height }) => height} @media (min-width: 768px) {
         border-radius: 10px;
     }
 
@@ -103,7 +104,7 @@ const InDevLabel = styled.span`
     border-radius: 8px;
 `;
 
-const CardImage = styled.div<{ src?: string }>`
+const CardImage = styled.img<{ src?: string }>`
     width: 100%;
     height: 250px;
     background-image: url(${({ src }) => src});
@@ -127,6 +128,8 @@ const Card: React.FC<CardProps> = ({
     techStack = [],
     background,
     className,
+    width,
+    height,
 }) => {
     if (!title) throw new Error("Title cannot be empty");
     return (
@@ -135,6 +138,8 @@ const Card: React.FC<CardProps> = ({
             background={background}
             aria-disabled={disabled}
             className={className}
+            width={width}
+            height={height}
         >
             {image && <CardImage src={image} />}
 
@@ -148,22 +153,26 @@ const Card: React.FC<CardProps> = ({
                     </TechStack>
                 )}
                 <CardContent>{content}</CardContent>
-                <CardFooter>
-                    {isLive && liveDemo ? (
-                        <LiveButton href={liveDemo} target="_blank">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                            >
-                                <path d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z" />
-                            </svg>
-                            Live
-                        </LiveButton>
-                    ) : (
-                        <InDevLabel>No demo available😢</InDevLabel>
-                    )}
-                </CardFooter>
+                {isLive && liveDemo ? (
+                    <CardFooter>
+                        {isLive && liveDemo ? (
+                            <LiveButton href={liveDemo} target="_blank">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                >
+                                    <path d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z" />
+                                </svg>
+                                Live
+                            </LiveButton>
+                        ) : (
+                            <InDevLabel>No demo available😢</InDevLabel>
+                        )}
+                    </CardFooter>
+                ) : (
+                    ""
+                )}
             </CardBody>
         </StyledCard>
     );
