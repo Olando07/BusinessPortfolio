@@ -347,7 +347,7 @@ function App() {
                         className="card-hover"
                     ></Card>
                     <Card
-                        title="Editor Configuration"
+                        title="Editor "
                         isLive={false}
                         width="400px"
                         background="#d1d5dc"
